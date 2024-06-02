@@ -3,9 +3,9 @@ from django.conf import settings
 
 # Create your models here.
 class Plant(models.Model):
-    name = models.TextField()
-    type = models.TextField()
-    origin=models.TextField()
-    description = models.TextField()
-    image = models.TextField()
+    plantName = models.TextField()
+    plantType = models.TextField()
+    plantOrigin=models.TextField()
+    plantDescription = models.TextField()
+    plantImage = models.TextField()
 

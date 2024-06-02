@@ -3,9 +3,9 @@ from django.conf import settings
 
 # Create your models here.
 class Product(models.Model):
-    name = models.TextField()
-    price = models.IntegerField()
-    stock=  models.IntegerField()
-    description = models.TextField()
-    image = models.TextField()
+    productName = models.TextField()
+    productPrice = models.IntegerField()
+    productStock=  models.IntegerField()
+    productDescription = models.TextField()
+    productImage = models.TextField()
 
