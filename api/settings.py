@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'products',
     'games',
     'corsheaders',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -138,3 +139,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 CORS_ORIGIN_ALLOW_ALL = True
+
+AUTH_USER_MODEL = 'users.User'
