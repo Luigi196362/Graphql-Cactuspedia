@@ -4,11 +4,13 @@ import products.schema
 import plants.schema
 import users.schema
 import games.schema
+import posts.schema
 
 class Query(users.schema.Query, 
             products.schema.Query,
             plants.schema.Query, 
             games.schema.Query,
+            posts.schema.Query,
             graphene.ObjectType):
     pass
 
@@ -16,6 +18,7 @@ class Mutation(users.schema.Mutation,
                products.schema.Mutation,
                plants.schema.Mutation,
                games.schema.Mutation,
+               posts.schema.Mutation,
                graphene.ObjectType):
     
     token_auth = graphql_jwt.ObtainJSONWebToken.Field()

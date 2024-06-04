@@ -14,13 +14,12 @@ class CreateUser(graphene.Mutation):
         username = graphene.String(required=True)
         password = graphene.String(required=True)
         email = graphene.String(required=True)
-        is_premium = graphene.Boolean(required=True)
 
-    def mutate(self, info, username, password, email,is_premium):
+    def mutate(self, info, username, password, email):
         user = User(
             username=username,
             email=email,
-            is_premium=is_premium,
+
         )
         user.set_password(password)
         user.save()
